@@ -6,11 +6,11 @@
 её ответ проверяется программой и не ломает процесс, когда модель ошиблась.
 
 Запуск без ключа API (показывает логику и проверку):
-    python qualify.py --demo
+    python3 qualify.py --demo
 
 Запуск с реальной моделью:
     export LLM_API_KEY=...
-    python qualify.py lead_1.txt
+    python3 qualify.py lead_1.txt
 """
 
 import argparse
@@ -80,7 +80,7 @@ def ask_model(system_prompt, user_text, correction=None):
     import requests
 
     if not API_KEY:
-        sys.exit("Не задан LLM_API_KEY. Для просмотра логики запустите: python qualify.py --demo")
+        sys.exit("Не задан LLM_API_KEY. Для просмотра логики запустите: python3 qualify.py --demo")
 
     messages = [
         {"role": "system", "content": system_prompt},

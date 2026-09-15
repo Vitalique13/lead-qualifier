@@ -34,7 +34,7 @@
 Без ключа API, чтобы посмотреть логику и работу проверки:
 
 ```bash
-python qualify.py --demo
+python3 qualify.py --demo
 ```
 
 С реальной моделью:
@@ -42,7 +42,7 @@ python qualify.py --demo
 ```bash
 pip install -r requirements.txt
 export LLM_API_KEY=...            # любой OpenAI-совместимый ключ
-python qualify.py lead_1.txt
+python3 qualify.py lead_1.txt
 ```
 
 Переменные окружения: `LLM_API_KEY`, `LLM_API_URL` (по умолчанию OpenAI),
