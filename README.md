@@ -42,7 +42,7 @@ python qualify.py --demo
 ```bash
 pip install -r requirements.txt
 export LLM_API_KEY=...            # любой OpenAI-совместимый ключ
-python qualify.py examples/lead_1.txt
+python qualify.py lead_1.txt
 ```
 
 Переменные окружения: `LLM_API_KEY`, `LLM_API_URL` (по умолчанию OpenAI),
@@ -54,9 +54,9 @@ python qualify.py examples/lead_1.txt
 |---|---|
 | `system_prompt.md` | Системная инструкция |
 | `qualify.py` | Скрипт: запрос, проверка ответа, повтор, запасной вариант |
-| `examples/lead_1.txt` | Заявка, которая проходит квалификацию |
-| `examples/lead_2.txt` | Заявка, где не хватает данных |
-| `examples/lead_3.txt` | Заявка ниже минимального чека |
+| `lead_1.txt` | Заявка, которая проходит квалификацию |
+| `lead_2.txt` | Заявка, где не хватает данных |
+| `lead_3.txt` | Заявка ниже минимального чека |
 
 ## Что это не покрывает
 

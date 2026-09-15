@@ -10,7 +10,7 @@
 
 Запуск с реальной моделью:
     export LLM_API_KEY=...
-    python qualify.py examples/lead_1.txt
+    python qualify.py lead_1.txt
 """
 
 import argparse
@@ -134,7 +134,7 @@ def qualify(user_text, system_prompt):
 
 
 DEMO = [
-    ("examples/lead_1.txt", {
+    ("lead_1.txt", {
         "budget_status": "qualified",
         "project_scope_summary": "Компании нужна система учёта заказов с приёмом заявок от дилеров, "
                                  "расчётом себестоимости и интеграциями с 1С и складом. "
@@ -145,13 +145,13 @@ DEMO = [
             "Две интеграции со стороны клиента, сроки зависят от его готовности",
         ],
     }),
-    ("examples/lead_2.txt", {
+    ("lead_2.txt", {
         "budget_status": "needs_clarification",
         "project_scope_summary": "Клиент хочет разработать приложение. Ни платформа, ни состав работ, "
                                  "ни бюджет не названы.",
         "red_flags": ["Запрос прайса до обсуждения задачи", "Объём работ не определён"],
     }),
-    ("examples/lead_3.txt", {
+    ("lead_3.txt", {
         "budget_status": "unqualified",
         "project_scope_summary": "Клиент просит починить форму обратной связи на сайте. "
                                  "Объём работ — около часа.",
